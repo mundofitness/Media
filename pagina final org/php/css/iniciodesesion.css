@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body{
+    background:url(imagenes/fondo4-2.jpg)
+}
+header{
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+.inicio_sesion{
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    position: relative;
+}
+header .logo{
+    margin-left: 20px;
+    position: relative;
+    font-size: 2em;
+    color: #0fe2e2;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Exo 2", sans-serif; 
+}
+header .navigation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navigation li{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+header .navigation li a{
+    display: inline-block;
+    color: #0fe2e2;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: "Exo 2", sans-serif; 
+    justify-content: center; 
+}
+header .navigation li a:hover{
+    color: #ffffff;
+}
+.logo:hover{
+    color: #ffffff;
+}
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0fe2e2;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #092a72;
+    box-shadow: 0 0 10px #092a72, 0 0 40px #092a72,0 0 80px #092a72;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#092a72);
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#092a72);
+}
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#092a72);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#092a72);
+}
+.btn-neon:hover #span4{
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.btn-neon_principal{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0fe2e2;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+header .logo{
+    position: relative;
+    font-size: 2em;
+    color: #0fe2e2;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.btn-neon_principal:hover{
+    background: #092a72;
+    box-shadow: 0 0 10px #092a72, 0 0 40px #092a72,0 0 80px #092a72;
+    transition-delay: 1s;
+}
+.btn-neon_principal span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span4{
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.separacion{
+    margin-top: 10em;
+}
+/*boton*/
+.containerboton{
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.img-boton2{
+    width: 200px;
+    height: 200px;
+}
+.img-form{
+    justify-content: center;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.redes a{
+    align-items: center;
+}
+.redes a, .img-boton2{
+    display: block;
+    text-decoration: none;
+    background-color: #0fe2e2;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 750ms ease;
+
+}
+.redes a:hover{
+    background: #ffffff;
+    color: #ffffff;
+}
+.redes a{
+    margin:1px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+#btn-mas{
+    display: none;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.img-boton2{
+    cursor: pointer;
+    font-size: 5px;
+}
+#btn-mas:checked ~ .btn-mas .img-boton2{
+    transform: rotate(137deg);
+}
+.icon-footer{
+    height: 35px;
+    width: 35px;
+}
+/*forms*/
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+@media(max-width:1024px){
+    
+    header{
+        padding: 15px 40px;
+        background-size: cover;
+        background-position: center;
+    }
+    header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .navigation li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(/imagenes/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .toggleMenu.active{
+        background: url(/imagenes/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+    header .navigation.active{
+        display: flex;
+    }
+}

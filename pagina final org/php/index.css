@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: url(imagenes/fondo4-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin:auto;
+    width: 60%;
+}
+.espacio{
+    margin-top: 7em;
+}
+.comentarios{
+    color: white;
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
+    border-top: 10px solid #0fe2e2;
+    margin-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h2{
+    color: aquamarine;
+    border-bottom: 1px solid #0fe2e2;
+}
+div.comentarios div.comentario{
+    padding: 20px;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+
+div.comentarios div.comentario span{
+    font-weight: bold;
+}
+div.comentarios div.comentario div.acciones{
+    padding: 10px;
+    text-align: right;
+}
+div.comentarios div.comentario button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    transition: ease .3s all;
+    margin: 0 0.1em;
+}
+div.comentarios div.comentario button:hover{
+    transform:scale(1.1);
+}
+div.comentarios button.borrar{
+    background-color: #0fe2e2;
+}
+div.comentarios button.editar{
+    background-color: #0fe2e2;
+}
+.comentario p{
+    padding: 5px;
+}
+div.btn-add{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+div.btn-add button.añadir{
+    background-color: #0fe2e2;
+    font-size: 50px;
+    border-radius: 2000px;    
+}
+
+div.formulario{
+    width: 50%;
+    margin:0 auto;
+    padding: 20px 0;
+}
+div.formulario input[type=text]
+div.formulario textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    border: 1px solid #cbcbcb;
+}
+div.formulario label{
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+}
+div.formulario input[type=radio]{
+    margin:0 15px 0 5px;
+}
+
+div.formulario input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: none;
+    background: #0fe2e2;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+div.formulario input[type=submit] :hover{
+    transform: scale(1.1);
+}
+.pie-pagina{
+    margin-top: 25px;
+    width: 100%;
+    background-color: #000;
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    border-radius: 40px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+.pie-pagina .grupo-1 .box p{
+    font-size: 1.5em;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    color: #000;
+    margin-right: 10px;
+    background-color: #0fe2e2;
+    border-radius: 40px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #000;
+    background-color: white;
+}
+.pie-pagina .grupo-2{
+    background-color: #0fe2e2;
+    padding: 15px;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+
+}
+
+/*header*/
+header{
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+.inicio_sesion{
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    position: relative;
+}
+header .logo{
+    position: relative;
+    font-size: 2em;
+    color: #0fe2e2;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Exo 2", sans-serif; 
+}
+header .navigation{
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+header .navigation li{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+header .navigation li a{
+    display: inline-block;
+    color: #0fe2e2;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: "Exo 2", sans-serif; 
+    justify-content: center; 
+}
+header .navigation li a:hover{
+    color: #ffffff;
+}
+.logo:hover{
+    color: #ffffff;
+}
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0fe2e2;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #092a72;
+    box-shadow: 0 0 10px #092a72, 0 0 40px #092a72,0 0 80px #092a72;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#092a72);
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#092a72);
+}
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#092a72);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#092a72);
+}
+.btn-neon:hover #span4{
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.btn-neon_principal{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0fe2e2;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+header .logo{
+    position: relative;
+    font-size: 2em;
+    color: #0fe2e2;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.btn-neon_principal:hover{
+    background: #092a72;
+    box-shadow: 0 0 10px #092a72, 0 0 40px #092a72,0 0 80px #092a72;
+    transition-delay: 1s;
+}
+.btn-neon_principal span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#092a72);
+}
+.btn-neon_principal:hover #span4{
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+body{
+    background: url(imagenes/fondo4-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: #0fe2e2;
+    margin-top: 5em;
+}
+@media(max-width:1024px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+@media(max-width:480px) {
+    header{
+        padding: 15px 40px;
+        background-size: cover;
+        background-position: center;
+    }
+    header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .navigation li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .toggleMenu.active{
+        background: url(close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+    header .navigation.active{
+        display: flex;
+    }
+    .imagen3{
+        width: 25em;
+        height: 20em;
+    }
+    .cuerpo3 p{
+        font-size: 1.15em;
+    }
+    .cuerpo2{
+        max-width: max-content;
+        height: 480px;
+    }
+    .comentarios{
+        padding: 0.5em;
+    }
+    .acciones{
+        justify-content: center;
+    }
+    .comentario p{
+        margin: 10px;
+    }
+    .pie-pagina .grupo-1 .box figure img{
+        width: 150px;
+        border-radius: 40px;
+    }
+    .container{
+        padding: -25px;
+    }
+    div.formulario{
+        width: 50%;
+        margin-left: 0;
+        margin-right: 7,5em;
+    }
+}
